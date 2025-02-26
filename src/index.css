@@ -32,6 +32,12 @@ body{
     @apply w-full h-full object-cover
 }
 
+.section{
+    @apply pt-20 lg:pt-32
+}
+
+
+
 .headline-1{
     @apply max-w-max;
     background: -webkit-linear-gradient(0deg, #fafafa, #a1a1aa);

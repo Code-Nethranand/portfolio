@@ -18,9 +18,9 @@ const About = () => {
         className='section'
     >
         <div className="container">
-            <div className="bg-zinc-800/50 p-7 rounded-2xl md:p-12">
+            <div className="bg-zinc-800/50 p-7 rounded-2xl md:p-12 reveal-up">
                 <p className="text-zinc-300 mb-4 md:mb-8 md:text-xl md:max-w-[60ch]">
-                    Welcome! I&apos;m Henry, a professional web developer with a knack for crafting visually stunning and highly functional websites. Combining creativity and technical expertise. I transform your vision into digital masterpiece that excels in both appearance and performance.
+                    Welcome! I'm Nethranand, a professional web developer and data analyst with a passion for creating dynamic, high-performance websites and turning data into valuable insights. With a blend of creativity and technical expertise, I build visually stunning, user-friendly web experiences while leveraging data to drive informed decisions and enhance business outcomes. Let’s bring your vision to life with impactful design and data-driven precision.
                 </p>
 
                 <div className="flex flex-wrap items-center gap-4 md:gap-7">

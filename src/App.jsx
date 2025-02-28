@@ -5,6 +5,7 @@ import Skill from "./components/Skill"
 import Work from "./components/Work"
 import Contact from "./components/Contact"
 import Footer from "./components/Footer"
+import { Analytics } from "@vercel/analytics/react"
 
 import { ReactLenis } from "lenis/react"
 import { gsap } from "gsap";
@@ -37,6 +38,7 @@ const App = () => {
 
   return (
     <ReactLenis root>
+      <Analytics />
       <Header />
       <main>
         <Hero />

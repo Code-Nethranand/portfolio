@@ -51,20 +51,20 @@ const skillItem = [
       desc: 'Operating System'
     },
     {
-      imgSrc: '/images/nodejs.svg',
-      fallbackImg: 'https://cdn-icons-png.flaticon.com/512/919/919825.png',
+      imgSrc: '/images/nodejs.png',
+      fallbackImg: '',
       label: 'NodeJS',
       desc: 'Web Server'
     },
     {
-      imgSrc: '/images/expressjs.svg',
-      fallbackImg: 'https://cdn-icons-png.flaticon.com/512/919/919831.png',
+      imgSrc: '/images/express.png',
+      fallbackImg: '',
       label: 'ExpressJS',
       desc: 'Node Framework'
     },
     {
-      imgSrc: '/images/mongodb.svg',
-      fallbackImg: 'https://cdn-icons-png.flaticon.com/512/919/919836.png',
+      imgSrc: '/images/mongodb.png',
+      fallbackImg: '',
       label: 'MongoDB',
       desc: 'Database'
     },
@@ -87,14 +87,14 @@ const skillItem = [
       desc: 'Framework'
     },
     {
-      imgSrc: '/images/nextjs.svg',
-      fallbackImg: 'https://cdn-icons-png.flaticon.com/512/5968/5968292.png',
+      imgSrc: '/images/nextjs.png',
+      fallbackImg: '',
       label: 'Next.js',
       desc: 'React Framework'
     },
     {
-      imgSrc: '/images/tailwindcss.svg',
-      fallbackImg: 'https://cdn-icons-png.flaticon.com/512/732/732212.png',
+      imgSrc: '/images/tailwind.png',
+      fallbackImg: '',
       label: 'TailwindCSS',
       desc: 'User Interface'
     },
@@ -111,8 +111,8 @@ const skillItem = [
       desc: 'Code Hosting'
     },
     {
-      imgSrc: '/images/postman.svg',
-      fallbackImg: 'https://cdn-icons-png.flaticon.com/512/5968/5968705.png',
+      imgSrc: '/images/postman.png',
+      fallbackImg: '',
       label: 'Postman',
       desc: 'API Testing'
     },
@@ -123,8 +123,8 @@ const skillItem = [
       desc: 'Containerization'
     },
     {
-      imgSrc: '/images/powerbi.svg',
-      fallbackImg: 'https://cdn-icons-png.flaticon.com/512/5968/5968705.png',
+      imgSrc: '/images/powerbi.jpeg',
+      fallbackImg: '',
       label: 'Power BI',
       desc: 'Data Analysis'
     },
@@ -135,32 +135,32 @@ const skillItem = [
       desc: 'Data Analysis'
     },
     {
-      imgSrc: '/images/pandas.svg',
-      fallbackImg: 'https://cdn-icons-png.flaticon.com/512/5968/5968350.png',
+      imgSrc: '/images/pandas.png',
+      fallbackImg: '',
       label: 'Pandas',
       desc: 'Data Analysis'
     },
     {
-      imgSrc: '/images/numpy.svg',
-      fallbackImg: 'https://cdn-icons-png.flaticon.com/512/5968/5968350.png',
+      imgSrc: '/images/numpy.png',
+      fallbackImg: '',
       label: 'NumPy',
       desc: 'Data Analysis'
     },
     {
-      imgSrc: '/images/matplotlib.svg',
-      fallbackImg: 'https://cdn-icons-png.flaticon.com/512/5968/5968350.png',
+      imgSrc: '/images/matplotlib.png',
+      fallbackImg: '',
       label: 'Matplotlib',
       desc: 'Data Visualization'
     },
     {
-      imgSrc: '/images/aws.svg',
-      fallbackImg: 'https://cdn-icons-png.flaticon.com/512/873/873120.png',
+      imgSrc: '/images/aws.png',
+      fallbackImg: '',
       label: 'AWS',
       desc: 'Cloud Services'
     },
     {
-      imgSrc: '/images/gcp.svg',
-      fallbackImg: 'https://cdn-icons-png.flaticon.com/512/6124/6124995.png',
+      imgSrc: '/images/gcp.png',
+      fallbackImg: '',
       label: 'Google Cloud',
       desc: 'Cloud Services'
     },

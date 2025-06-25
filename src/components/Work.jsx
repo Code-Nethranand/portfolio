@@ -3,40 +3,46 @@ import ProjectCard from "./ProjectCard"
 
 const works = [
     {
-      imgSrc: '/images/project-1.jpg',
-      title: 'Full stack music app',
+      imgSrc: '/images/project-1.png',
+      title: 'Chat Sphere - Chat app',
       tags: ['API', 'MVC', 'Development'],
-      projectLink: 'https://musify-5al0.onrender.com/'
+      projectLink: 'https://github.com/Code-Nethranand/chat-sphere'
     },
     {
-      imgSrc: '/images/project-2.jpg',
-      title: 'Free stock photo app',
+      imgSrc: '/images/project-2.png',
+      title: 'PunarEval',
       tags: ['API', 'SPA'],
-      projectLink: 'https://pixstock-official.vercel.app/'
+      projectLink: 'https://github.com/Code-Nethranand/punareval'
     },
     {
-      imgSrc: '/images/project-3.jpg',
-      title: 'Recipe app',
+      imgSrc: '/images/project-3.png',
+      title: 'Ai Mock Interview',
       tags: ['Development', 'API'],
-      projectLink: ''
+      projectLink: 'https://github.com/Code-Nethranand/ai-mock-interview-app'
     },
     {
-      imgSrc: '/images/project-4.jpg',
-      title: 'Real state website',
+      imgSrc: '/images/project-4.png',
+      title: 'Portfolio Website',
       tags: ['Web-design', 'Development'],
-      projectLink: 'https://github.com/codewithsadee-org/wealthome'
+      projectLink: 'https://github.com/Code-Nethranand/portfolio'
     },
     {
-      imgSrc: '/images/project-5.jpg',
-      title: 'eCommerce website',
+      imgSrc: '/images/project-5.png',
+      title: 'Indra Cast',
       tags: ['eCommerce', 'Development'],
-      projectLink: 'https://github.com/codewithsadee/anon-ecommerce-website'
+      projectLink: 'https://github.com/Code-Nethranand/indra_cast'
     },
     {
-      imgSrc: '/images/project-6.jpg',
-      title: 'vCard Personal portfolio',
+      imgSrc: '/images/project-6.png',
+      title: 'Desktop Voice Assistant',
       tags: ['Web-design', 'Development'],
-      projectLink: 'https://github.com/codewithsadee/vcard-personal-portfolio'
+      projectLink: 'https://github.com/Code-Nethranand/desktop-voice-assistant'
+    },
+    {
+      imgSrc: '/images/project-7.png',
+      title: 'Sign Language Detector',
+      tags: ['Web-design', 'Development'],
+      projectLink: 'https://github.com/Code-Nethranand/sign-language-detector'
     },
 ];
 

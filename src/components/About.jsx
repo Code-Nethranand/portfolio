@@ -19,7 +19,7 @@ const About = () => {
     >
         <div className="container">
             <div className="bg-zinc-800/50 p-7 rounded-2xl md:p-12 reveal-up">
-                <p className="text-zinc-300 mb-4 md:mb-8 md:text-xl md:max-w-[60ch]">
+                <p className="text-zinc-300 mb-4 md:mb-8 md:text-xl md:max-w-[60ch] text-justify">
                     Skilled Software Developer with a strong background in building scalable web applications and optimizing performance. Proficient in problem-solving, ensuring the delivery of high-quality, efficient solutions. Experienced in collaborating withinagile teams to drive innovation, meet project goals, and deliver impactful results.
                 </p>
 

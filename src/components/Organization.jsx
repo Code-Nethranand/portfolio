@@ -44,10 +44,10 @@ const Organization = () => {
             </p>
 
             <div className="relative overflow-hidden reveal-up">
-                <div className="flex animate-scroll">
-                    {/* First set of logos */}
+                <div className="flex animate-scroll min-w-max">
+                    {/* First set of logos - visible on all devices */}
                     {organizationLogos.map(({ imgSrc, name, fallbackImg }, key) => (
-                        <div key={key} className="flex-shrink-0 mx-8">
+                        <div key={key} className="flex-shrink-0 mx-2 md:mx-8">
                             <img 
                                 src={imgSrc}
                                 width={120}
@@ -59,48 +59,52 @@ const Organization = () => {
                                         e.target.src = fallbackImg;
                                     }
                                 }}
-                                className="h-32 w-auto object-contain rounded-lg"
+                                className="h-20 w-auto object-contain rounded-lg md:h-32"
                             />
                         </div>
                     ))}
                     
-                    {/* Second set for seamless loop */}
-                    {organizationLogos.map(({ imgSrc, name, fallbackImg }, key) => (
-                        <div key={`duplicate-${key}`} className="flex-shrink-0 mx-8">
-                            <img 
-                                src={imgSrc}
-                                width={120}
-                                height={120}
-                                alt={name}
-                                onError={(e) => {
-                                    if (fallbackImg && e.target.src !== fallbackImg) {
-                                        e.target.onerror = null;
-                                        e.target.src = fallbackImg;
-                                    }
-                                }}
-                                className="h-32 w-auto object-contain rounded-lg"
-                            />
-                        </div>
-                    ))}
+                    {/* Second set for seamless loop - hidden on mobile */}
+                    <div className="hidden md:flex">
+                        {organizationLogos.map(({ imgSrc, name, fallbackImg }, key) => (
+                            <div key={`duplicate-${key}`} className="flex-shrink-0 mx-8">
+                                <img 
+                                    src={imgSrc}
+                                    width={120}
+                                    height={120}
+                                    alt={name}
+                                    onError={(e) => {
+                                        if (fallbackImg && e.target.src !== fallbackImg) {
+                                            e.target.onerror = null;
+                                            e.target.src = fallbackImg;
+                                        }
+                                    }}
+                                    className="h-32 w-auto object-contain rounded-lg"
+                                />
+                            </div>
+                        ))}
+                    </div>
 
-                    {/* Third set to ensure perfect continuity */}
-                    {organizationLogos.map(({ imgSrc, name, fallbackImg }, key) => (
-                        <div key={`triplicate-${key}`} className="flex-shrink-0 mx-8">
-                            <img 
-                                src={imgSrc}
-                                width={120}
-                                height={120}
-                                alt={name}
-                                onError={(e) => {
-                                    if (fallbackImg && e.target.src !== fallbackImg) {
-                                        e.target.onerror = null;
-                                        e.target.src = fallbackImg;
-                                    }
-                                }}
-                                className="h-32 w-auto object-contain rounded-lg"
-                            />
-                        </div>
-                    ))}
+                    {/* Third set to ensure perfect continuity - hidden on mobile */}
+                    <div className="hidden md:flex">
+                        {organizationLogos.map(({ imgSrc, name, fallbackImg }, key) => (
+                            <div key={`triplicate-${key}`} className="flex-shrink-0 mx-8">
+                                <img 
+                                    src={imgSrc}
+                                    width={120}
+                                    height={120}
+                                    alt={name}
+                                    onError={(e) => {
+                                        if (fallbackImg && e.target.src !== fallbackImg) {
+                                            e.target.onerror = null;
+                                            e.target.src = fallbackImg;
+                                        }
+                                    }}
+                                    className="h-32 w-auto object-contain rounded-lg"
+                                />
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </div>
         </div>

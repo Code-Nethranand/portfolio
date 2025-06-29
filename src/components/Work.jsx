@@ -28,7 +28,7 @@ const works = [
     {
       imgSrc: '/images/project-5.png',
       title: 'Indra Cast',
-      tags: ['Django', 'OpenWeatherMap API', 'Google Maps Integration'],
+      tags: ['Django', 'OpenWeatherMap API', 'Map Integration'],
       projectLink: 'https://github.com/Code-Nethranand/indra_cast'
     },
     {
@@ -55,7 +55,7 @@ const Work = () => {
             <h2 className="headline-2 mb-6 md:mb-8 reveal-up">
                 My portfolio highlights
             </h2>
-            <div className="grid gap-4 md:gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-2 2xl:grid-cols-3"
+            <div className="grid gap-4 md:gap-6 grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-2 2xl:grid-cols-3"
             >
               {
               works.map(({ imgSrc, title, tags, projectLink }, key) => 

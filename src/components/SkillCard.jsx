@@ -17,8 +17,8 @@ const SkillCard = ({
   };
 
   return (
-    <div className={'flex items-center gap-3 ring-2 ring-inset ring-zinc-50/10 rounded-2xl p-3 hover:bg-zinc-800 translate-colors group ' + classes}>
-        <figure className="bg-zinc-700/50 rounded-lg overflow-hidden w-12 h-12 p-2 group-hover:bg-zinc-900 translate-colors">
+    <div className={'flex items-center gap-3 ring-2 ring-inset ring-zinc-900/10 dark:ring-zinc-50/10 rounded-2xl p-3 hover:bg-zinc-200 dark:hover:bg-zinc-800 transition-colors group ' + classes}>
+        <figure className="bg-zinc-300/50 dark:bg-zinc-700/50 rounded-lg overflow-hidden w-12 h-12 p-2 group-hover:bg-zinc-400 dark:group-hover:bg-zinc-900 transition-colors">
             {iconLink ? (
                 <a href={iconLink} target="_blank" rel="noopener noreferrer">
                     <img 
@@ -41,7 +41,7 @@ const SkillCard = ({
         </figure>
         <div>
             <h3>{label}</h3>
-            <p className="text-zinc-400 text-sm">
+            <p className="text-zinc-600 dark:text-zinc-400 text-sm">
                 {desc}
             </p>
         </div>

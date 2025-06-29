@@ -1,4 +1,3 @@
-
 import ProjectCard from "./ProjectCard"
 
 const works = [
@@ -53,10 +52,10 @@ const Work = () => {
         className="section"
     >
         <div className="container">
-            <h2 className="headline-2 mb-8 reveal-up">
+            <h2 className="headline-2 mb-6 md:mb-8 reveal-up">
                 My portfolio highlights
             </h2>
-            <div className="grid gap-x-4 gap-y-5 grid-cols-[repeat(auto-fill,_minmax(280px,_1fr))]"
+            <div className="grid gap-4 md:gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-2 2xl:grid-cols-3"
             >
               {
               works.map(({ imgSrc, title, tags, projectLink }, key) => 

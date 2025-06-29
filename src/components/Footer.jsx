@@ -1,4 +1,3 @@
-
 import { ButtonPrimary } from "./Button";
 
 
@@ -75,7 +74,7 @@ const Footer = () => {
                                     <li key={key}>
                                         <a 
                                             href={href} 
-                                            className="block text-sm text-zinc-400 py-1 transition-colors hover:text-zinc-200 reveal-up"
+                                            className="block text-sm text-zinc-600 dark:text-zinc-400 py-1 transition-colors hover:text-zinc-800 dark:hover:text-zinc-200 reveal-up"
                                         >
                                             {label}
                                         </a>
@@ -95,7 +94,7 @@ const Footer = () => {
                                         <a 
                                             href={href} 
                                             target="_blank"
-                                            className="block text-sm text-zinc-400 py-1 transition-colors hover:text-zinc-200 reveal-up"
+                                            className="block text-sm text-zinc-600 dark:text-zinc-400 py-1 transition-colors hover:text-zinc-800 dark:hover:text-zinc-200 reveal-up"
                                         >
                                             {label}
                                         </a>
@@ -117,11 +116,11 @@ const Footer = () => {
                     src="/images/logo.svg" 
                     width={40}
                     height={40} 
-                    className="Logo" 
+                    className="Logo filter dark:invert-0 invert" 
                     />
                 </a>
                 <p className="text-zinc-500 text-sm reveal-up">
-                    &copy; 2025 <span className="text-zinc-200">Code-Nethranand</span>
+                    &copy; 2025 <span className="text-zinc-700 dark:text-zinc-200">Code-Nethranand</span>
                 </p>
             </div>
         </div>

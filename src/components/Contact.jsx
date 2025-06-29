@@ -40,7 +40,7 @@ const Contact = () => {
                 <h2 className="headline-2 lg:max-w-[12ch] reveal-up">
                     Contact me for collaboration        
                 </h2>
-                <p className="text-zinc-400 mt-3 mb-8 max-w-[50ch] lg:max-w-[30ch] reveal-up">
+                <p className="text-zinc-600 dark:text-zinc-400 mt-3 mb-8 max-w-[50ch] lg:max-w-[30ch] reveal-up">
                     Reach out today to discuss your project needs and start collaborating on something amazing!
                 </p>
                 <div className="flex items-center gap-2 mt-auto ">
@@ -49,7 +49,7 @@ const Contact = () => {
                         <a
                             href={href}
                             target="_blank"
-                            className="w-12 h-12 grid place-items-center ring-inset ring-2 ring-zinc-50/5 rounded-lg transition-[background-colors, colors] hover:bg-zinc-50 hover:text-zinc-950 active:bg-zinc-50/80 reveal-up"
+                            className="w-12 h-12 grid place-items-center ring-inset ring-2 ring-zinc-900/5 dark:ring-zinc-50/5 rounded-lg transition-[background-colors, colors] hover:bg-zinc-900 hover:text-zinc-50 dark:hover:bg-zinc-50 dark:hover:text-zinc-950 active:bg-zinc-900/80 dark:active:bg-zinc-50/80 reveal-up"
                             key={key}
 
                         >

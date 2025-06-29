@@ -1,11 +1,13 @@
 import SkillCard from "./SkillCard" 
 
 const skillItem = [
+    // Programming Languages (Core)
     {
-      imgSrc: '/images/figma.svg',
-      fallbackImg: 'https://cdn-icons-png.flaticon.com/512/5968/5968705.png',
-      label: 'Figma',
-      desc: 'Design tool'
+      imgSrc: '/images/html5.svg',
+      fallbackImg: 'https://cdn-icons-png.flaticon.com/512/732/732212.png',
+      label: 'HTML',
+      desc: 'Markup Language',
+      iconLink: 'https://www.flaticon.com/free-icons/html'
     },
     {
       imgSrc: '/images/css3.svg',
@@ -20,13 +22,6 @@ const skillItem = [
       desc: 'Interaction'
     },
     {
-      imgSrc: '/images/html5.svg',
-      fallbackImg: 'https://cdn-icons-png.flaticon.com/512/732/732212.png',
-      label: 'HTML',
-      desc: 'Markup Language',
-      iconLink: 'https://www.flaticon.com/free-icons/html'
-    },
-    {
       imgSrc: '/images/python.svg',
       fallbackImg: 'https://cdn-icons-png.flaticon.com/512/5968/5968350.png',
       label: 'Python',
@@ -38,18 +33,28 @@ const skillItem = [
       label: 'C/C++',
       desc: 'Programming Language'
     },
+
+    // Frontend Frameworks & Libraries
     {
-      imgSrc: '/images/sql.svg',
-      fallbackImg: 'https://cdn-icons-png.flaticon.com/512/4248/4248443.png',
-      label: 'SQL',
-      desc: 'Database Query'
+      imgSrc: '/images/react.svg',
+      fallbackImg: 'https://cdn-icons-png.flaticon.com/512/1126/1126012.png',
+      label: 'React',
+      desc: 'Framework'
     },
     {
-      imgSrc: '/images/linux.svg',
-      fallbackImg: 'https://cdn-icons-png.flaticon.com/512/226/226772.png',
-      label: 'Linux',
-      desc: 'Operating System'
+      imgSrc: '/images/nextjs.png',
+      fallbackImg: '',
+      label: 'Next.js',
+      desc: 'React Framework'
     },
+    {
+      imgSrc: '/images/tailwind.png',
+      fallbackImg: '',
+      label: 'TailwindCSS',
+      desc: 'User Interface'
+    },
+
+    // Backend & Server Technologies
     {
       imgSrc: '/images/nodejs.png',
       fallbackImg: '',
@@ -61,6 +66,14 @@ const skillItem = [
       fallbackImg: '',
       label: 'ExpressJS',
       desc: 'Node Framework'
+    },
+
+    // Databases
+    {
+      imgSrc: '/images/sql.svg',
+      fallbackImg: 'https://cdn-icons-png.flaticon.com/512/4248/4248443.png',
+      label: 'SQL',
+      desc: 'Database Query'
     },
     {
       imgSrc: '/images/mongodb.png',
@@ -80,60 +93,8 @@ const skillItem = [
       label: 'PostgreSQL',
       desc: 'Database'
     },
-    {
-      imgSrc: '/images/react.svg',
-      fallbackImg: 'https://cdn-icons-png.flaticon.com/512/1126/1126012.png',
-      label: 'React',
-      desc: 'Framework'
-    },
-    {
-      imgSrc: '/images/nextjs.png',
-      fallbackImg: '',
-      label: 'Next.js',
-      desc: 'React Framework'
-    },
-    {
-      imgSrc: '/images/tailwind.png',
-      fallbackImg: '',
-      label: 'TailwindCSS',
-      desc: 'User Interface'
-    },
-    {
-      imgSrc: '/images/git.svg',
-      fallbackImg: 'https://cdn-icons-png.flaticon.com/512/2111/2111288.png',
-      label: 'Git',
-      desc: 'Version Control'
-    },
-    {
-      imgSrc: '/images/github.svg',
-      fallbackImg: 'https://cdn-icons-png.flaticon.com/512/733/733553.png',
-      label: 'GitHub',
-      desc: 'Code Hosting'
-    },
-    {
-      imgSrc: '/images/postman.png',
-      fallbackImg: '',
-      label: 'Postman',
-      desc: 'API Testing'
-    },
-    {
-      imgSrc: '/images/docker.svg',
-      fallbackImg: 'https://cdn-icons-png.flaticon.com/512/919/919853.png',
-      label: 'Docker',
-      desc: 'Containerization'
-    },
-    {
-      imgSrc: '/images/powerbi.jpeg',
-      fallbackImg: '',
-      label: 'Power BI',
-      desc: 'Data Analysis'
-    },
-    {
-      imgSrc: '/images/excel.svg',
-      fallbackImg: 'https://cdn-icons-png.flaticon.com/512/732/732220.png',
-      label: 'Excel',
-      desc: 'Data Analysis'
-    },
+
+    // Data Analysis & Visualization
     {
       imgSrc: '/images/pandas.png',
       fallbackImg: '',
@@ -153,6 +114,20 @@ const skillItem = [
       desc: 'Data Visualization'
     },
     {
+      imgSrc: '/images/powerbi.jpeg',
+      fallbackImg: '',
+      label: 'Power BI',
+      desc: 'Data Analysis'
+    },
+    {
+      imgSrc: '/images/excel.svg',
+      fallbackImg: 'https://cdn-icons-png.flaticon.com/512/732/732220.png',
+      label: 'Excel',
+      desc: 'Data Analysis'
+    },
+
+    // Cloud & DevOps
+    {
       imgSrc: '/images/aws.png',
       fallbackImg: '',
       label: 'AWS',
@@ -163,6 +138,46 @@ const skillItem = [
       fallbackImg: '',
       label: 'Google Cloud',
       desc: 'Cloud Services'
+    },
+    {
+      imgSrc: '/images/docker.svg',
+      fallbackImg: 'https://cdn-icons-png.flaticon.com/512/919/919853.png',
+      label: 'Docker',
+      desc: 'Containerization'
+    },
+
+    // Version Control & Development Tools
+    {
+      imgSrc: '/images/git.svg',
+      fallbackImg: 'https://cdn-icons-png.flaticon.com/512/2111/2111288.png',
+      label: 'Git',
+      desc: 'Version Control'
+    },
+    {
+      imgSrc: '/images/github.svg',
+      fallbackImg: 'https://cdn-icons-png.flaticon.com/512/733/733553.png',
+      label: 'GitHub',
+      desc: 'Code Hosting'
+    },
+    {
+      imgSrc: '/images/postman.png',
+      fallbackImg: '',
+      label: 'Postman',
+      desc: 'API Testing'
+    },
+
+    // Design & Operating Systems
+    {
+      imgSrc: '/images/figma.svg',
+      fallbackImg: 'https://cdn-icons-png.flaticon.com/512/5968/5968705.png',
+      label: 'Figma',
+      desc: 'Design tool'
+    },
+    {
+      imgSrc: '/images/linux.svg',
+      fallbackImg: 'https://cdn-icons-png.flaticon.com/512/226/226772.png',
+      label: 'Linux',
+      desc: 'Operating System'
     },
 ]
 

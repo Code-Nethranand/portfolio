@@ -12,7 +12,7 @@ const experienceItems = [
     {
       company: 'Internshala',
       position: 'Web Developer Intern',
-      period: '2021 - 2023',
+      period: 'Oct 2024 - Dec 2024',
       location: 'Remote',
       description: 'Created a responsive website using HTML, CSS, Bootstrap, and JavaScript, improving UI/UX performance by 30%. Implemented PHP and DBMS, enabling secure user registration and profile management for 100+ users.',
       technologies: [],

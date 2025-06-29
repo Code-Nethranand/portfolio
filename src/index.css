@@ -12,12 +12,24 @@
     display: none;  /* Safari and Chrome */
 }
 
+/* Brave browser specific fixes */
+@supports (-webkit-appearance: none) {
+    .scrollbar-hide {
+        -webkit-overflow-scrolling: touch;
+    }
+}
+
 html{
     scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 body{
     @apply bg-zinc-50 text-zinc-900 dark:bg-zinc-900 dark:text-zinc-50;
+    /* Brave browser specific */
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
 }
 
 .menu-btn{
@@ -27,6 +39,9 @@ body{
 .material-symbols-rounded{
     @apply w-[1em] h-[1em] overflow-hidden;
     font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0,"opsz" 24;
+    /* Brave browser font rendering fix */
+    -webkit-font-feature-settings: "liga" 1, "kern" 1;
+    font-feature-settings: "liga" 1, "kern" 1;
 }
 
 .container{
@@ -66,6 +81,8 @@ body{
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    /* Fallback for browsers that don't support background-clip */
+    color: #18181b;
 }
 
 .dark .headline-1,
@@ -74,6 +91,8 @@ body{
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    /* Fallback for browsers that don't support background-clip */
+    color: #fafafa;
 }
 
 .headline-1{
@@ -89,11 +108,21 @@ body{
 }
 
 .reveal-up{
-    @apply translate-y-20 opacity-0
+    @apply translate-y-20 opacity-0;
+    /* Brave browser transform fix */
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+    /* Ensure smooth transitions */
+    -webkit-transition: opacity 0.6s ease, -webkit-transform 0.6s ease;
+    transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
-
-
+/* Fallback for reveal animations when GSAP fails */
+.reveal-up.fallback {
+    opacity: 1 !important;
+    -webkit-transform: translateY(0) !important;
+    transform: translateY(0) !important;
+}
 
 .navbar {
     @apply absolute top-full mt-2 right-0 min-w-40 p-2 bg-zinc-900/10 dark:bg-zinc-50/10 rounded-2xl ring-inset ring-1 ring-zinc-900/5 dark:ring-zinc-50/5 scale-90 isolate blur-sm opacity-0 invisible transition-[opacity,transform,filter] md:static md:flex md:items-center md:mt-0 md:opacity-100 md:blur-0 md:visible md:scale-100 backdrop-blur-2xl;

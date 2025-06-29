@@ -151,5 +151,11 @@ body{
 }
 
 .animate-scroll {
-    animation: scroll 35s linear infinite;
+    animation: scroll 10s linear infinite;
+}
+
+@media (min-width: 640px) {
+    .animate-scroll {
+        animation: scroll 35s linear infinite;
+    }
 }
